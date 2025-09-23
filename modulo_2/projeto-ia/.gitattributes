@@ -1,0 +1,8 @@
+# Normalização de finais de linha
+* text=auto
+
+# Trate arquivos binários corretamente
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary

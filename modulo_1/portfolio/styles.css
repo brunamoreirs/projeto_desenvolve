@@ -1,0 +1,63 @@
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  background: #fff0f6;
+  color: #3a2a2b;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header.profile-header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: linear-gradient(135deg, #ffd6e8, #ffb6c1);
+  color: white;
+}
+
+header.profile-header img.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #ff9eb5;
+  margin-bottom: 1rem;
+}
+
+main.profile-main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+main.profile-main section {
+  margin-bottom: 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(120,70,100,0.06);
+}
+
+main.profile-main h2 {
+  color: #5a3440;
+  margin-top: 0;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+a {
+  color: #ff69b4;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer.profile-footer {
+  text-align: center;
+  padding: 1rem 0;
+  color: #5a3440;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <title>DevBoti - Chat IA</title>
+</head>
+<body>
+  <div class="app">
+
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>Histórico</h2>
+        <button id="clearHistoryBtn" class="btn ghost sm" title="Limpar histórico">🗑️</button>
+      </div>
+      <ul id="historyList" class="history-list"></ul>
+    </aside>
+
+    <main class="chat-area">
+      <header class="chat-header">
+        <div class="brand">
+          <div class="logo">🤖</div>
+          <div class="titles">
+            <h1>DevBoti</h1>
+            <p class="subtitle">Seu assistente de IA</p>
+          </div>
+        </div>
+
+        <div class="controls">
+          <input type="password" id="apiKey" placeholder="API Key (salva localmente)" />
+          <select id="modelSelect" title="Modelo">
+            <option value="gemini-1.5-flash" selected>Gemini 1.5 Flash (Google)</option>
+            <!-- As opções abaixo só funcionam em backend por causa de CORS da OpenAI -->
+            <option value="gpt-4">GPT-4 (OpenAI) — requer backend</option>
+            <option value="gpt-4-turbo">GPT-4 Turbo (OpenAI) — requer backend</option>
+            <option value="gpt-4o">GPT-4o (OpenAI) — requer backend</option>
+          </select>
+
+          <label class="theme-switch" title="Tema claro/escuro">
+            <input type="checkbox" id="toggleThemeCheckbox" />
+            <span class="slider"></span>
+          </label>
+
+          <!-- Botão para limpar o chat -->
+          <button id="clearChatBtn" class="btn ghost sm" title="Limpar chat">🧹</button>
+        </div>
+      </header>
+
+      <section id="chat" class="chat" aria-live="polite"></section>
+
+      <footer class="input-area">
+        <form id="askForm">
+          <textarea id="userInput" placeholder="Digite sua mensagem..." rows="2"></textarea>
+          <div class="input-actions">
+            <span id="charCount" class="muted">0 caracteres</span>
+            <button id="btnPergunta" type="submit" class="btn primary">Enviar</button>
+          </div>
+        </form>
+        <div id="error" class="error"></div>
+      </footer>
+    </main>
+  </div>
+
+  <template id="spinnerTpl"><span class="spinner" aria-hidden="true"></span></template>
+
+  <script src="script.js"></script>
+</body>
+</html>

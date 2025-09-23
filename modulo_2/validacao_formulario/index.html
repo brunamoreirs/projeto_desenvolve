@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro de Usuário</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" type="module" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Formulário de Cadastro</h1>
+
+    <form id="form-cadastro" novalidate>
+      <div class="campo">
+        <label for="nome">Nome</label>
+        <input id="nome" type="text" placeholder="Seu nome completo">
+        <small class="erro" id="erro-nome"></small>
+      </div>
+
+      <div class="campo">
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="seu@email.com">
+        <small class="erro" id="erro-email"></small>
+      </div>
+
+      <div class="campo">
+        <label for="senha">Senha</label>
+        <input id="senha" type="password" placeholder="Mínimo 6 caracteres">
+        <small class="erro" id="erro-senha"></small>
+      </div>
+
+      <div class="campo">
+        <label for="confirmar">Confirmar Senha</label>
+        <input id="confirmar" type="password" placeholder="Repita a senha">
+        <small class="erro" id="erro-confirmar"></small>
+      </div>
+
+      <div class="campo">
+        <label for="cpf">CPF</label>
+        <input id="cpf" type="text" placeholder="000.000.000-00">
+        <small class="erro" id="erro-cpf"></small>
+      </div>
+
+      <div class="campo">
+        <label for="cep">CEP</label>
+        <input id="cep" type="text" placeholder="00000-000">
+        <small class="erro" id="erro-cep"></small>
+      </div>
+
+      <div class="campo">
+        <label for="logradouro">Endereço</label>
+        <input id="logradouro" type="text">
+        <small class="erro" id="erro-logradouro"></small>
+      </div>
+
+      <div class="duas-colunas">
+        <div class="campo">
+          <label for="bairro">Bairro</label>
+          <input id="bairro" type="text">
+          <small class="erro" id="erro-bairro"></small>
+        </div>
+        <div class="campo">
+          <label for="cidade">Cidade</label>
+          <input id="cidade" type="text">
+          <small class="erro" id="erro-cidade"></small>
+        </div>
+      </div>
+
+      <div class="campo">
+        <label for="uf">UF</label>
+        <input id="uf" maxlength="2" type="text">
+        <small class="erro" id="erro-uf"></small>
+      </div>
+
+      <div class="checkbox">
+        <label>
+          <input id="termos" type="checkbox"> Aceito os termos de uso
+        </label>
+        <small class="erro" id="erro-termos"></small>
+      </div>
+
+      <button type="submit">Cadastrar</button>
+      <button type="button" id="limpar">Limpar</button>
+    </form>
+
+    <p id="mensagem-sucesso" class="sucesso" hidden>
+      ✅ Cadastro realizado com sucesso!
+    </p>
+  </div>
+</body>
+</html>

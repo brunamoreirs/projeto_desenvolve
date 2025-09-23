@@ -1,0 +1,109 @@
+:root{
+  --bg1: #fff0f6;
+  --bg2: #fff1f2;
+  --card: #ffffff;
+  --accent: #ff6fa3;
+  --muted: #64748b;
+  --text: #0f172a;
+  --glass: rgba(255,255,255,0.6);
+  --radius: 16px;
+  font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background: linear-gradient(135deg,var(--bg1) 0%, var(--bg2) 100%);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+  color:var(--text);
+}
+
+.wrap{
+  width:100%;
+  max-width:360px;
+  text-align:center;
+}
+
+.app-title{
+  margin:0 0 14px 0;
+  font-size:20px;
+  letter-spacing:0.2px;
+}
+
+/* Card */
+.calculator{
+  background: linear-gradient(180deg, rgba(255,255,255,0.9), var(--card));
+  border-radius:var(--radius);
+  padding:18px;
+  box-shadow: 0 8px 30px rgba(15,23,42,0.12);
+}
+
+/* visor */
+.display{
+  background: linear-gradient(180deg, rgba(12,18,42,0.03), rgba(12,18,42,0.01));
+  padding:12px;
+  border-radius:12px;
+  text-align:right;
+  margin-bottom:12px;
+  min-height:72px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.previous{
+  color:var(--muted);
+  font-size:13px;
+  min-height:18px;
+  text-align:right;
+  margin-bottom:6px;
+  opacity:0.9;
+}
+
+#display{
+  width:100%;
+  border:0;
+  background:transparent;
+  font-size:28px;
+  font-weight:600;
+  text-align:right;
+  color:var(--text);
+  outline:none;
+}
+
+/* grade de botões */
+.keys{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap:10px;
+}
+
+.key{
+  border:0;
+  padding:14px;
+  border-radius:10px;
+  font-size:18px;
+  background: linear-gradient(180deg,#fff,#fff1f6);
+  box-shadow: 0 6px 14px rgba(12,18,42,0.06);
+  cursor:pointer;
+  transition: transform .08s ease, box-shadow .12s ease;
+}
+
+.key:active{ transform: translateY(3px); }
+.key:focus{ outline:3px solid rgba(255,111,163,0.12); }
+
+/* variações */
+.key-ac{ background: linear-gradient(180deg,#ffeef6,#ffd6ea); color: #b91c6b; font-weight:700;}
+.key-equals{ background: linear-gradient(180deg,var(--accent), #ff3b85); color:white; grid-row: 3 / span 2; font-weight:700; }
+.key-plus{ background: linear-gradient(180deg,#ffdce8,#ffb3d1); font-weight:700; }
+.key-zero{ grid-column: span 2; }
+
+/* responsivo */
+@media (max-width:380px){
+  #display{ font-size:22px }
+  .key{ padding:12px; font-size:16px }
+}
