@@ -30,23 +30,27 @@ O projeto demonstra na prática os conceitos de **App Router**, **Server Compone
 
 meu-blog/
 ├── app/
-│ ├── about/
-│ │ └── page.tsx # Página "Sobre"
-│ ├── posts/
-│ │ └── [slug]/
-│ │ └── page.tsx # Posts dinâmicos
-│ ├── layout.tsx # Layout global
-│ ├── page.tsx # Página inicial
-│ ├── providers.tsx # Provider do tema (next-themes)
-│ └── globals.css # Estilos globais
+│   ├── about/
+│   │   └── page.tsx              # Página "Sobre"
+│   ├── posts/
+│   │   ├── [slug]/
+│   │   │   └── page.tsx          # Posts dinâmicos
+│   ├── layout.tsx                # Layout global
+│   ├── page.tsx                  # Página inicial
+│   ├── providers.tsx             # Provider do tema (next-themes)
+│   └── globals.css               # Estilos globais
+│
 ├── components/
-│ ├── LikeButton.tsx # Botão de curtir (Client Component)
-│ ├── PostCard.tsx # Card dos posts
-│ └── ThemeToggle.tsx # Botão para tema claro/escuro
+│   ├── LikeButton.tsx            # Botão de curtir (Client Component)
+│   ├── PostCard.tsx              # Card dos posts
+│   └── ThemeToggle.tsx           # Botão para tema claro/escuro
+│
 ├── public/
-│ └── favicon.ico # Ícone do site
-├── package.json # Dependências e scripts
-└── README.md # Documentação do projeto
+│   └── favicon.ico               # Ícone do site
+│
+├── package.json                  # Dependências e scripts
+└── README.md                     # Documentação do projeto
+
 ---
 
 ## 🏃‍♀️ Como Executar
