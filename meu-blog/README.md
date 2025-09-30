@@ -47,10 +47,6 @@ meu-blog/
 │ └── favicon.ico # Ícone do site
 ├── package.json # Dependências e scripts
 └── README.md # Documentação do projeto
-
-yaml
-Copiar código
-
 ---
 
 ## 🏃‍♀️ Como Executar
