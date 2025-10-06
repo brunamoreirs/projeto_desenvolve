@@ -11,7 +11,7 @@ Olá! 👋 Este repositório contém todas as minhas anotações, códigos e pro
 
 ## 📚 Sobre o curso
 - **Início:** 09/06/2025  
-- **Término:** 06/10/2025  
+- **Término:** 08/10/2025  
 - **Aulas:** Segunda, terça e quarta-feira, das 19h às 22h (ao vivo)  
 - **Carga horária total:** 160 horas  
 - **Mentorias individuais** com profissionais do Grupo Boticário  
